@@ -29,7 +29,8 @@ document.querySelectorAll('li').forEach(liElement => {
         liElement.insertAdjacentHTML('beforeend', `<div class="ribbon-wrapper">
     <div class="ribbon">3</div>
   </div>`);
-    } else if (isPrime(texteToNumber) && texteToNumber > 1) {
+    }
+    if (isPrime(texteToNumber) && texteToNumber > 1) {
         liElement.classList.add('premier');
         liElement.insertAdjacentHTML('beforeend', `<div class="ribbon-wrapper">
     <div data-text="somme" class="ribbon">premier</div>`);
