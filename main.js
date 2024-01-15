@@ -63,7 +63,7 @@ let b = 200;
 generateNumbers(a, b);
 addBannerAndColors();
 
-window.addEventListener('scroll', event => {
+window.addEventListener('scroll', () => {
     if (document.getElementById('app').getBoundingClientRect().bottom <= window.innerHeight) {
         a += 200;
         b += 200;
